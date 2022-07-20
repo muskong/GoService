@@ -3,13 +3,15 @@ package entity
 import (
 	"database/sql"
 
-	"github.com/muskong/GoPkg/gorm"
+	gormDb "github.com/muskong/GoPkg/gorm"
 	"github.com/muskong/GoPkg/zaplog"
+	"gorm.io/gorm"
 )
 
 type (
 	order      struct{}
 	StoryOrder struct {
+		gorm.Model
 		ID              int
 		StoryAttitudeId int
 		StoryId         int
@@ -18,6 +20,7 @@ type (
 		CreatedAt       sql.NullTime
 		UpdatedAt       sql.NullTime
 		DeletedAt       sql.NullTime
+		Story           Stories `gorm:"foreignkey:ID;references:StoryId"`
 	}
 )
 
@@ -39,10 +42,10 @@ func (m *order) StateRefunded() string {
 	return "refunded"
 }
 
-func (m *order) OrderList(page, limit int) (list []*StoryOrder, count int64, err error) {
-	db := gorm.ClientNew().Model(StoryOrder{})
+func (m *order) OrderList(userId, page, limit int) (list []*StoryOrder, count int64, err error) {
+	db := gormDb.ClientNew().Model(StoryOrder{})
 
-	err = db.Count(&count).Order("id desc").Limit(limit).Offset(page).Find(&list).Error
+	err = db.Where("user_id=?", userId).Preload("Story").Count(&count).Order("id desc").Limit(limit).Offset(page).Find(&list).Error
 	if err != nil {
 		zaplog.Sugar.Error(err)
 	}
@@ -50,7 +53,7 @@ func (m *order) OrderList(page, limit int) (list []*StoryOrder, count int64, err
 }
 
 func (m *order) OrderDetail(orderId int) (*StoryOrder, error) {
-	db := gorm.ClientNew().Model(StoryOrder{})
+	db := gormDb.ClientNew().Model(StoryOrder{})
 
 	var order StoryOrder
 	err := db.Where("id = ?", orderId).First(&order).Error
@@ -61,7 +64,7 @@ func (m *order) OrderDetail(orderId int) (*StoryOrder, error) {
 }
 
 func (m *order) OrderCreate(storyAttitudeId, storyId, userId int, state string) (*StoryOrder, error) {
-	db := gorm.ClientNew().Model(StoryOrder{})
+	db := gormDb.ClientNew().Model(StoryOrder{})
 
 	order := StoryOrder{
 		StoryAttitudeId: storyAttitudeId,

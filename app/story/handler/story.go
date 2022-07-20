@@ -66,3 +66,22 @@ func StoryLike(c *gin.Context) {
 
 	c.SecureJSON(http.StatusOK, data)
 }
+
+func UserStories(c *gin.Context) {
+	var page logic.Page
+	err := c.ShouldBindJSON(&page)
+
+	userId, ok := c.Get("userId")
+	if !ok {
+		c.SecureJSON(http.StatusOK, "未登录")
+	}
+
+	data, err := logic.UserStories(cast.ToInt(userId), &page)
+
+	if err != nil {
+		c.SecureJSON(http.StatusOK, err.Error())
+		return
+	}
+
+	c.SecureJSON(http.StatusOK, data)
+}

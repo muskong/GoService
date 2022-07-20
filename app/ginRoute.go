@@ -19,6 +19,8 @@ func GinRouter() *gin.Engine {
 		apiStory.GET("/list", story.Stories)
 		apiStory.GET("/detail", story.Story)
 		apiStory.POST("/like", story.StoryLike)
+
+		apiStory.GET("/user", story.UserStories)
 	}
 	apiUser := router.Group("/user")
 	{

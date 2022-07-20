@@ -18,3 +18,15 @@ func StoryLike(lo LikeOrder) (result interface{}, err error) {
 
 	return
 }
+
+func UserStories(userId int, page *Page) (result Result, err error) {
+
+	list, count, err := entity.Order.OrderList(userId, page.Offset(), page.Limit)
+
+	result.Data = list
+	result.Pagination.Limit = page.Limit
+	result.Pagination.Page = page.Page
+	result.Pagination.Total = count
+
+	return
+}
