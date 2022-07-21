@@ -1,8 +1,12 @@
 package logic
 
-import "github.com/muskong/GoWechat/app/story/entity"
+import "github.com/muskong/GoWechat/entity"
 
-func Stories(page *Page) (result Result, err error) {
+type Page struct {
+	entity.Page
+}
+
+func Stories(page *Page) (result entity.Result, err error) {
 
 	list, count, err := entity.Story.StoryList(page.Offset(), page.Limit)
 

@@ -54,7 +54,7 @@ func (m *userModel) GetOpenid(openid string) (*User, error) {
 	db := gorm.ClientNew().Model(User{})
 
 	var user User
-	err := db.Debug().Where(User{
+	err := db.Where(User{
 		WechatOpenid: openid,
 	}).FirstOrCreate(&user).Error
 

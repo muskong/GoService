@@ -4,6 +4,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/muskong/GoCore/middlewares"
 	"github.com/muskong/GoPkg/jwt"
+	order "github.com/muskong/GoWechat/app/order/handler"
 	story "github.com/muskong/GoWechat/app/story/handler"
 	user "github.com/muskong/GoWechat/app/user/handler"
 )
@@ -26,9 +27,9 @@ func GinRouter() *gin.Engine {
 		// story
 		apiStory.GET("/list", story.Stories)
 		apiStory.GET("/detail", story.Story)
-		apiStory.POST("/like", story.StoryLike)
 
-		apiStory.GET("/user", story.UserStories)
+		apiStory.POST("/like", order.StoryLike)
+		apiStory.GET("/user", order.UserStories)
 	}
 	apiUser := router.Group("/user")
 	{

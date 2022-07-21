@@ -1,4 +1,4 @@
-package logic
+package entity
 
 type (
 	Page struct {
@@ -9,8 +9,7 @@ type (
 		Data       interface{}
 		Pagination struct {
 			Total int64
-			Page  int
-			Limit int
+			Page
 		}
 	}
 	SelectInterface struct {

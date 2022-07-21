@@ -36,6 +36,7 @@ func main() {
 		MaxOpenConns:    config.Db.GetInt("max_open"),
 		MaxIdleConns:    config.Db.GetInt("max_idle"),
 		MaxConnLifetime: 0,
+		Debug:           config.Db.GetBool("debug_sql"),
 	})
 
 	jwt.JwtInit(&jwt.JwtConfig{
