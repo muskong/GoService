@@ -1,6 +1,6 @@
 package logic
 
-import "github.com/muskong/GoWechat/app/user/entity"
+import "github.com/muskong/GoWechat/entity"
 
 func UserInfo(userId int64) (user interface{}, err error) {
 

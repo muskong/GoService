@@ -4,8 +4,8 @@ go 1.18
 
 require (
 	github.com/gin-gonic/gin v1.8.1
-	github.com/muskong/GoCore v0.0.0-20220721024010-d47a979a0ec7
-	github.com/muskong/GoPkg v0.0.0-20220721025455-8f6a645214df
+	github.com/muskong/GoCore v0.0.0-20220721025519-2aeba1ee89ab
+	github.com/muskong/GoPkg v0.0.0-20220721073220-e952f136cfd7
 	github.com/spf13/cast v1.5.0
 	golang.org/x/crypto v0.0.0-20220622213112-05595931fe9d
 	gorm.io/gorm v1.23.8

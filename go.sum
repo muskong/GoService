@@ -37,7 +37,7 @@ cloud.google.com/go/storage v1.10.0/go.mod h1:FLPqc6j+Ki4BU591ie1oL6qBQGu2Bl/tZ9
 cloud.google.com/go/storage v1.14.0/go.mod h1:GrKmX003DSIwi9o29oFT7YDnHYwZoctc3fOKtUw0Xmo=
 dmitri.shuralyov.com/gpu/mtl v0.0.0-20190408044501-666a987793e9/go.mod h1:H6x//7gZCb22OMCxBHrMx7a5I7Hp++hsVxbQ4BYO7hU=
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
-github.com/BurntSushi/toml v1.1.0 h1:ksErzDEI1khOiGPgpwuI7x2ebx/uXQNw7xJpn9Eq1+I=
+github.com/BurntSushi/toml v1.2.0 h1:Rt8g24XnyGTyglgET/PRUNlrUeu9F5L+7FilkXfZgs0=
 github.com/BurntSushi/xgb v0.0.0-20160522181843-27f122750802/go.mod h1:IVnqGOEym/WlBOVXweHU+Q+/VP0lqqI8lqeDx9IjBqo=
 github.com/benbjohnson/clock v1.1.0 h1:Q92kusRqC1XV2MjkWETPvjJVqKetz1OzxZB7mHJLju8=
 github.com/benbjohnson/clock v1.1.0/go.mod h1:J11/hYXuz8f4ySSvYwY0FKfm+ezbsZBKZxNJlLklBHA=
@@ -179,12 +179,10 @@ github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd h1:TRLaZ9cD/w
 github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd/go.mod h1:6dJC0mAP4ikYIbvyc7fijjWJddQyLn8Ig3JB5CqoB9Q=
 github.com/modern-go/reflect2 v1.0.2 h1:xBagoLtFs94CBntxluKeaWgTMpvLxC4ur3nMaC9Gz0M=
 github.com/modern-go/reflect2 v1.0.2/go.mod h1:yWuevngMOJpCy52FWWMvUC8ws7m/LJsjYzDa0/r8luk=
-github.com/muskong/GoCore v0.0.0-20220721024010-d47a979a0ec7 h1:mpQ5I6HdWhjBhAUm/gebyMWwPmY7otvB0OJ/s8bXWB0=
-github.com/muskong/GoCore v0.0.0-20220721024010-d47a979a0ec7/go.mod h1:q76ijqCh8r3LAUbf88aFRH8C4c2hA2L7k2z5apY7iCQ=
-github.com/muskong/GoPkg v0.0.0-20220721013853-c20da5de039f h1:mQTNV1ToJZ3Zf+Ya6sgDdEODlDq1TAY9PUTw3HB2jJ4=
-github.com/muskong/GoPkg v0.0.0-20220721013853-c20da5de039f/go.mod h1:FG0kQ7kPQV5MXhNvLwg/9M2H1ivo3B3Eo3eZvGOHPyQ=
-github.com/muskong/GoPkg v0.0.0-20220721025455-8f6a645214df h1:c+xi9AXOjEHV5EWlA6sxhijGi/6f3gD/sVoWFWtFMdQ=
-github.com/muskong/GoPkg v0.0.0-20220721025455-8f6a645214df/go.mod h1:+fjF+4XWeHMBJcQFFQas68glP5rquwItNC2ktfZMEyk=
+github.com/muskong/GoCore v0.0.0-20220721025519-2aeba1ee89ab h1:6IND4I+8fOd9SRlAcqRHko1UDg0aSFviW/SyfPkdn8s=
+github.com/muskong/GoCore v0.0.0-20220721025519-2aeba1ee89ab/go.mod h1:KFVnJ9ndGgh9vXjJiBWTdXqNBGVaGT8NnkufnEKGHz4=
+github.com/muskong/GoPkg v0.0.0-20220721073220-e952f136cfd7 h1:lxPmQmYAiE0PQa67seBUcevY7OI5QflxBgZe/r2fbyg=
+github.com/muskong/GoPkg v0.0.0-20220721073220-e952f136cfd7/go.mod h1:+fjF+4XWeHMBJcQFFQas68glP5rquwItNC2ktfZMEyk=
 github.com/muskong/GoService/pkg v0.0.0-20220719161722-666c36176b41 h1:/u7amN7aJvTL8c3sT9mCLFoetXZQhAMTZSfiU5UhZY0=
 github.com/muskong/GoService/pkg v0.0.0-20220719161722-666c36176b41/go.mod h1:VSv4i35EnowrB+KBPrM7K2RLg02zRONU5NRKkwy1IqM=
 github.com/natefinch/lumberjack v2.0.0+incompatible h1:4QJd3OLAMgj7ph+yZTuX13Ld4UpgHp07nNdFX7mqFfM=

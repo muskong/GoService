@@ -6,7 +6,7 @@ import (
 	"github.com/muskong/GoPkg/jwt"
 	"github.com/muskong/GoPkg/we"
 	"github.com/muskong/GoPkg/zaplog"
-	"github.com/muskong/GoWechat/app/user/entity"
+	"github.com/muskong/GoWechat/entity"
 	"golang.org/x/crypto/bcrypt"
 )
 
