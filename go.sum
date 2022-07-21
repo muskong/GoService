@@ -179,10 +179,10 @@ github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd h1:TRLaZ9cD/w
 github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd/go.mod h1:6dJC0mAP4ikYIbvyc7fijjWJddQyLn8Ig3JB5CqoB9Q=
 github.com/modern-go/reflect2 v1.0.2 h1:xBagoLtFs94CBntxluKeaWgTMpvLxC4ur3nMaC9Gz0M=
 github.com/modern-go/reflect2 v1.0.2/go.mod h1:yWuevngMOJpCy52FWWMvUC8ws7m/LJsjYzDa0/r8luk=
-github.com/muskong/GoCore v0.0.0-20220720072646-44a2790ed8a9 h1:IPR+H9uSzmf5jHLVYtIz7pr/RAKzKDa6xZutY9ePNow=
-github.com/muskong/GoCore v0.0.0-20220720072646-44a2790ed8a9/go.mod h1:q76ijqCh8r3LAUbf88aFRH8C4c2hA2L7k2z5apY7iCQ=
-github.com/muskong/GoPkg v0.0.0-20220720061621-1af86f195100 h1:CfKcLOp7ps8t+x6CS99u4voZIp3U3pyYVngTBOn3Ad0=
-github.com/muskong/GoPkg v0.0.0-20220720061621-1af86f195100/go.mod h1:FG0kQ7kPQV5MXhNvLwg/9M2H1ivo3B3Eo3eZvGOHPyQ=
+github.com/muskong/GoCore v0.0.0-20220721024010-d47a979a0ec7 h1:mpQ5I6HdWhjBhAUm/gebyMWwPmY7otvB0OJ/s8bXWB0=
+github.com/muskong/GoCore v0.0.0-20220721024010-d47a979a0ec7/go.mod h1:q76ijqCh8r3LAUbf88aFRH8C4c2hA2L7k2z5apY7iCQ=
+github.com/muskong/GoPkg v0.0.0-20220721013853-c20da5de039f h1:mQTNV1ToJZ3Zf+Ya6sgDdEODlDq1TAY9PUTw3HB2jJ4=
+github.com/muskong/GoPkg v0.0.0-20220721013853-c20da5de039f/go.mod h1:FG0kQ7kPQV5MXhNvLwg/9M2H1ivo3B3Eo3eZvGOHPyQ=
 github.com/muskong/GoService/pkg v0.0.0-20220719161722-666c36176b41 h1:/u7amN7aJvTL8c3sT9mCLFoetXZQhAMTZSfiU5UhZY0=
 github.com/muskong/GoService/pkg v0.0.0-20220719161722-666c36176b41/go.mod h1:VSv4i35EnowrB+KBPrM7K2RLg02zRONU5NRKkwy1IqM=
 github.com/natefinch/lumberjack v2.0.0+incompatible h1:4QJd3OLAMgj7ph+yZTuX13Ld4UpgHp07nNdFX7mqFfM=

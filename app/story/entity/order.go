@@ -20,7 +20,7 @@ type (
 		CreatedAt       sql.NullTime
 		UpdatedAt       sql.NullTime
 		DeletedAt       sql.NullTime
-		Story           Stories `gorm:"foreignkey:ID;references:StoryId"`
+		StoryAttitude   StoryAttitude `gorm:"foreignkey:StoryAttitudeId;references:ID"`
 	}
 )
 
@@ -45,7 +45,7 @@ func (m *order) StateRefunded() string {
 func (m *order) OrderList(userId, page, limit int) (list []*StoryOrder, count int64, err error) {
 	db := gormDb.ClientNew().Model(StoryOrder{})
 
-	err = db.Where("user_id=?", userId).Preload("Story").Count(&count).Order("id desc").Limit(limit).Offset(page).Find(&list).Error
+	err = db.Where("user_id=?", userId).Preload("StoryAttitude").Count(&count).Order("id desc").Limit(limit).Offset(page).Find(&list).Error
 	if err != nil {
 		zaplog.Sugar.Error(err)
 	}
